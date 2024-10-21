@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetak Kuwitasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---Navbar-->
+
+    <div class="container">
+        <div class="container-item">
+
+            <div class="header">
+                <h1>Cetak Kwitansi</h1>
+            </div>
+            <hr>
+            <div class="form-box">
+                <div class="form-name">
+                    <label for="nama">Nama</label>
+                    <input id="nama" type="text" placeholder="Masukkan Nama Anda">
+                </div>
+                <hr>
+                <div class="form-input">
+                    <label for="item">Barang</label>
+                    <input id="item" type="text" placeholder="Masukkan Nama Barang">
+                </div>
+                <hr>
+                <div class="form-harga">
+                    <label for="harga">Harga</label>
+                    <input id="harga" type="number" placeholder="Masukkan Harga Barang">
+                </div>
+            </div>
+            <hr>
+            <div class="form-item">
+                <button id="btn-submit">Tambahkan</button>
+            </div>
+            <hr>
+            <div class="cart-box">
+                <div class="cart-header">
+                    <h3>Daftar Barang</h3>
+                </div>
+
+                <div class="cart-table">
+                    <table border="1" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama Barang</th>
+                                <th>Harga (Rp)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="submit-print">
+                    <button id="cetak">CETAK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Navbar End-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
